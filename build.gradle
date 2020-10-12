@@ -17,10 +17,35 @@ version = project.mod_version
 group = project.maven_group
 
 dependencies {
-	//to change the versions see the gradle.properties file
+	// to change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "com.github.darkerbit:rigmarole:${project.rigmarole_mappings}"
+
+	/* LOADER DEPENDENCIES */
+
+	// log4j
+	implementation "org.apache.logging.log4j:log4j-core:${project.log4j_version}"
+	implementation "org.apache.logging.log4j:log4j-api:${project.log4j_version}"
+	annotationProcessor "org.apache.logging.log4j:log4j-core:${project.log4j_version}"
+	annotationProcessor "org.apache.logging.log4j:log4j-api:${project.log4j_version}"
+
+	// gson
+	implementation "com.google.code.gson:gson:${project.gson_version}"
+
+	// guava
+	implementation "com.google.guava:guava:${project.guava_version}"
+
+	// asm
+	implementation "org.ow2.asm:asm:${project.asm_version}"
+	implementation "org.ow2.asm:asm-commons:${project.asm_version}"
+	implementation "org.ow2.asm:asm-util:${project.asm_version}"
+	implementation "org.ow2.asm:asm-tree:${project.asm_version}"
+	implementation "org.ow2.asm:asm-analysis:${project.asm_version}"
+
+	// loader
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	/* END LOADER DEPENDENCIES */
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
