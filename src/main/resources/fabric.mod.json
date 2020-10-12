@@ -9,8 +9,7 @@
     "Me!"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/darkerbit/rigmarole"
   },
 
   "license": "CC0-1.0",
@@ -19,19 +18,16 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "io.github.darkerbit.example.ExampleMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.7.4",
-    "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.5.x"
   },
   "suggests": {
-    "flamingo": "*"
   }
 }
