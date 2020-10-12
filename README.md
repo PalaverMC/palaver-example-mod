@@ -1,4 +1,4 @@
-# Fabric Example Mod
+# Palaver Example Mod
 
 ## Setup
 
