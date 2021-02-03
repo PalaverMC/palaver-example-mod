@@ -19,7 +19,7 @@ group = project.maven_group
 dependencies {
 	// to change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "com.github.darkerbit:rigmarole:${project.rigmarole_mappings}"
+	mappings "com.github.PalaverMC:rigmarole:${project.rigmarole_mappings}"
 
 	/* LOADER DEPENDENCIES */
 
