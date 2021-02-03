@@ -51,6 +51,12 @@ dependencies {
 	// You may need to force-disable transitiveness on them.
 }
 
+minecraft {
+	intermediaryUrl = {
+		return "https://jitpack.io/com/github/PalaverMC/intermediary/${project.minecraft_version}-v1.1/intermediary-${project.minecraft_version}-v1.1-v2.jar"
+	}
+}
+
 processResources {
 	inputs.property "version", project.version
 
